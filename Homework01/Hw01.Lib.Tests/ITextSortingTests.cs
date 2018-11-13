@@ -7,6 +7,8 @@ namespace Hw01.Lib.Tests
     {
         [Theory]
         [InlineData("without,hello,bag,world", "bag,hello,without,world")]
+        [InlineData("", "")]
+        [InlineData("nothing", "nothing")]
         public void SortByAlphabeticalReturnValidResults(string input, string expected)
         {
             var sut = new MyTextSorting();
