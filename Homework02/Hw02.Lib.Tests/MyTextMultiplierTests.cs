@@ -14,8 +14,13 @@ namespace Hw02.Lib.Tests
     363,
     132,
     308
-]")
-        ]
+]")]
+        [InlineData("",
+@"[]")] 
+        [InlineData("33",
+@"[
+    363
+]")] 
         public void GetFormattedStringReturnsValidResult(string input, string expected)
         {
             var sut = new MyTextMultiplier();
